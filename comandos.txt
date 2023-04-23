@@ -1,3 +1,21 @@
 --------------------------Backend----------------------
-npm init -y
-yarn add express
+npm init -y === é utilizado para criar rapidamente um arquivo package.json em um diretório vazio do projeto
+
+yarn add express === é usado para instalar o pacote express em um projeto Node.js usando o gerenciador de pacotes Yarn.
+
+yarn add nodemon -D ===  usado para instalar o pacote nodemon como uma dependência de desenvolvimento (devDependency) em um projeto Node.js usando o gerenciador de pacotes Yarn.
+
+Criar no package.json no campo scripts
+abaixo do test a linha == "dev": "nodemon", logo depois mudar o caminho do main
+para "src/server.js"
+
+yarn add sucrase -D === é uma ferramenta que permite que você use recursos modernos do JavaScript (como import/export de módulos e sintaxe de classe) em seu código Node.js, mesmo que a versão do Node.js instalada em seu sistema não suporte esses recursos. Isso é útil porque você pode escrever código moderno e elegante sem se preocupar com a compatibilidade com as versões mais antigas do Node.js.
+
+yarn add eslint -D
+yarn eslint --init
+
+cOLOCAR NAS CONFIGUÇÕES DO JSON E COLOCAR "[javascript]": { "editor.codeActionsOnSave": { "source.fixAll.eslint": true }, }, 
+
+"[javascriptreact]": { "editor.codeActionsOnSave": { "source.fixAll.eslint": true }, },
+
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
