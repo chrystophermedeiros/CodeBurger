@@ -19,3 +19,30 @@ cOLOCAR NAS CONFIGUÇÕES DO JSON E COLOCAR "[javascript]": { "editor.codeAction
 "[javascriptreact]": { "editor.codeActionsOnSave": { "source.fixAll.eslint": true }, },
 
 yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+yarn add sequelize
+yarn add sequelize-cli -D
+yarn add pg pg-hstore
+
+
+
+yarn sequelize migration:create --name=create-users
+yarn sequelize migration:create --name=create-products
+yarn sequelize db:migrate
+
+yarn add yup
+yarn add bcrypt
+yarn add multer
+
+docker
+docker run --name codeburguer-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+
+
+
+
+SQL
+
+SELECT * from USERS WHERE if = "32";
+INSERT INTO 
+USERS (ID, EMAIL, PASSOWORD, NAME)
+VALUES ('5', CHRYSTOPHER312@GMAIL.COM, 1234, 'CHRYSTOPHER')
