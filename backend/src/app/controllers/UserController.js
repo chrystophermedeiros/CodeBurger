@@ -22,10 +22,6 @@ class UserController {
         admin: Yup.boolean(),
     })
 
-    // if ( !(await schema.isValid(request.body))){
-    //     return response.status(400).json({error: "Make sure your data is correct"})
-    // }
-
     try {
         await schema.validateSync(request.body, {abortEarly: false})
 

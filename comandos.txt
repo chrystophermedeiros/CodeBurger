@@ -24,15 +24,24 @@ yarn add sequelize
 yarn add sequelize-cli -D
 yarn add pg pg-hstore
 
-
+------------------Migrations----------------------
 
 yarn sequelize migration:create --name=create-users
 yarn sequelize migration:create --name=create-products
-yarn sequelize db:migrate
+yarn sequelize migration:create --name=create-categories
+yarn sequelize migration:create --name=create-delete-category == deleta uma coluna de uma tabela desejeda
+yarn sequelize migration:create --name=create-category-column
+
+yarn sequelize db:migrate === migra para o banco de dados
+yarn sequelize db:migrate:undo === desfaz a ultima tabela
+yar
+
+------------------ Fim Migrations----------------------
 
 yarn add yup
 yarn add bcrypt
 yarn add multer
+yarn add jsonwebtoken
 
 docker
 docker run --name codeburguer-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
