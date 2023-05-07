@@ -31,6 +31,9 @@ yarn sequelize migration:create --name=create-products
 yarn sequelize migration:create --name=create-categories
 yarn sequelize migration:create --name=create-delete-category == deleta uma coluna de uma tabela desejeda
 yarn sequelize migration:create --name=create-category-column
+yarn sequelize migration:create --name=create-products-offer-column
+yarn sequelize migration:create --name=create-category-column
+
 
 yarn sequelize db:migrate === migra para o banco de dados
 yarn sequelize db:migrate:undo === desfaz a ultima tabela
@@ -43,9 +46,11 @@ yarn add bcrypt
 yarn add multer
 yarn add jsonwebtoken
 
+yarn add mongoose
+
 docker
 docker run --name codeburguer-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
-
+docker run --name mongo -p 27017:27017 -d -t mongo
 
 
 
@@ -55,3 +60,20 @@ SELECT * from USERS WHERE if = "32";
 INSERT INTO 
 USERS (ID, EMAIL, PASSOWORD, NAME)
 VALUES ('5', CHRYSTOPHER312@GMAIL.COM, 1234, 'CHRYSTOPHER')
+
+
+
+________________________Frontend___________________
+npx create-react-app frontend
+
+yarn start
+
+---Plugind_---
+yarn add eslint -D
+yarn eslint --init
+yarn add eslint-plugin-import-helpers -D
+yarn add eslint-plugin-react-hooks -D
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+--styled componnents__
+yarn add styled-components
