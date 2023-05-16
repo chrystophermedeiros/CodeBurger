@@ -11,21 +11,21 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const LoginImage = styled.img`
-  height: 70%;
+export const RegisterImage = styled.img`
+  height: 80%;
 `
 
 export const ContainerItens = styled.div`
   background: #373737;
   border-radius: 0 10px 10px 0;
-  height: 70%;
+  height: 80%;
   padding: 25px 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   h1 {
-    margin-top: 20px;
+    margin-top: 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -43,8 +43,8 @@ export const Label = styled.p`
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
+  margin-top: ${props => (props.error ? '12px' : '28px')};
   margin-bottom: 3px;
-
   color: #ffffff;
 `
 export const Input = styled.input`

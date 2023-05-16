@@ -46,7 +46,10 @@ yarn add bcrypt
 yarn add multer
 yarn add jsonwebtoken
 
+yarn add cors
+
 yarn add mongoose
+
 
 docker
 docker run --name codeburguer-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
@@ -77,3 +80,6 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 
 --styled componnents__
 yarn add styled-components
+
+
+yarn add axios
