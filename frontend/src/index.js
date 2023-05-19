@@ -11,8 +11,7 @@ ReactDOM.render(
     <UserProvider>
       <Routess />
     </UserProvider>
-    ,
-    <ToastContainer autoClose={2000} theme="colored" />,
+    <ToastContainer autoClose={2000} theme="colored" />
     <GlobalStyle />
   </>,
   document.getElementById('root')
