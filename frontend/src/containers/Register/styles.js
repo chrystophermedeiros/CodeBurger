@@ -16,7 +16,7 @@ export const RegisterImage = styled.img`
 `
 
 export const ContainerItens = styled.div`
-  background: #373737;
+  background: black;
   border-radius: 0 10px 10px 0;
   height: 80%;
   padding: 25px 75px;

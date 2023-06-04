@@ -7,7 +7,7 @@ import * as Yup from 'yup'
 
 import LoginImg from '../../assets/login-image.svg'
 import Logo from '../../assets/logo.svg'
-import Button from '../../components/Button/index'
+import { Button } from '../../components'
 import { useUser } from '../../hooks/UserContext'
 import api from '../../services/api'
 import {
@@ -20,7 +20,7 @@ import {
   ErroMessage
 } from './styles'
 
-function Login() {
+export function Login() {
   const history = useNavigate()
   const { putUserData } = useUser()
   const schema = Yup.object().shape({
@@ -54,8 +54,13 @@ function Login() {
     )
 
     putUserData(data)
+
     setTimeout(() => {
-      history('/')
+      if (data.admin) {
+        history('/pedidos')
+      } else {
+        history('/')
+      }
     }, 1000)
   }
 
@@ -97,5 +102,3 @@ function Login() {
     </Container>
   )
 }
-
-export default Login
