@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import paths from '../constants/paths'
 import { Home, Login, Register, Products, Cart, Admin } from '../containers'
 import PrivateRoute from '../routes/private-route'
 
@@ -18,11 +19,26 @@ function Routess() {
         <Route path="/cadastro" element={<Register />} />
 
         <Route
-          path="/pedidos"
+          path={paths.Order}
           element={<PrivateRoute element={<Admin />} isAdmin={true} />}
         />
         <Route
-          path="/listar-produtos"
+          path={paths.Products}
+          element={<PrivateRoute element={<Admin />} isAdmin={true} />}
+        />
+
+        <Route
+          path={paths.NewProdcut}
+          element={<PrivateRoute element={<Admin />} isAdmin={true} />}
+        />
+
+        <Route
+          path={paths.EditProducts}
+          element={<PrivateRoute element={<Admin />} isAdmin={true} />}
+        />
+
+        <Route
+          path={paths.NewCategory}
           element={<PrivateRoute element={<Admin />} isAdmin={true} />}
         />
       </Routes>

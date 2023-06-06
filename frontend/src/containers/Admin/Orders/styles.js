@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background-color: black;
   min-height: 100vh;
-  width: 80%;
+  width: 100%;
   .MuiSvgIcon-root {
     color: white;
   }

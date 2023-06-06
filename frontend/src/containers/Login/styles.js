@@ -68,11 +68,3 @@ export const SingInLink = styled.p`
     text-decoration: underline;
   }
 `
-
-export const ErroMessage = styled.p`
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: #cc1717;
-`

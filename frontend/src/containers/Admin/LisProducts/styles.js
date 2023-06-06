@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background: black;
+  width: 80vw;
   .MuiTable-root {
     background-color: black;
   }
