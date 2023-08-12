@@ -2,7 +2,7 @@
 
 module.exports = {
   up:  async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Categories', {
+    await queryInterface.createTable('categories', {
 
       id:{
         type: Sequelize.INTEGER,
@@ -19,7 +19,7 @@ module.exports = {
         
       },
 
-      createdAt: {
+      created_at: {
 
         type: Sequelize.DATE,
         allowNull: false,
@@ -27,7 +27,7 @@ module.exports = {
 
       },
 
-      updatedAt:{
+      updated_at:{
         type: Sequelize.DATE,
         allowNull: false,
 
@@ -39,7 +39,7 @@ module.exports = {
   },
 
   down: async  (queryInterface) => {
-    await queryInterface.dropTable('Categories')
+    await queryInterface.dropTable('categories')
    
   },
 }
